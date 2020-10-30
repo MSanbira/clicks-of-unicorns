@@ -1,0 +1,26 @@
+{
+    "name": "Clicks of Unicorns 🦄",
+    "version": "1.011",
+    "version_name": "1.011 custom emojis",
+    "description": "Fills your clicker with lots of majestic Unicorns",
+    "manifest_version": 2,
+    "icons": { 
+        "16": "uniPhoto128.png",
+        "48": "uniPhoto128.png",
+        "128": "uniPhoto128.png" 
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Clicks of Unicorns 🦄"
+    },
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
+}
